@@ -1,0 +1,11 @@
+# render.yaml
+services:
+  - type: web
+    name: house-price-api
+    runtime: python
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    plan: free
+    rootDir: backend
+    autoDeploy: true
